@@ -1,6 +1,5 @@
-Ads ] [
-Adasff
-123
-a233
-;
-INT
+INT X 1
+INT X2 2
+Begin
+Output [1] :
+End

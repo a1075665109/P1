@@ -7,11 +7,11 @@ scanner: main.o testScanner.o scanner.o
 	g++ -o scanner main.o scanner.o testScanner.o
 
 main.o: main.cpp
-	g++ -c main.cpp
+	g++ -g main.cpp
 testScanner.o: testScanner.cpp
-	g++ -c testScanner.cpp
+	g++ -g testScanner.cpp
 
 scanner.o: scanner.cpp
-	g++ -c scanner.cpp
+	g++ -g scanner.cpp
 
 

@@ -6,6 +6,7 @@
 #include <cstdio>
 #include <unistd.h>
 
+#include "node.h"
 #include "token.h"
 #include "scanner.h"
 #include "testScanner.h"
@@ -60,7 +61,9 @@ int main(int argc, char*argv[]){
 	}
 	cout << "\n";
 	// call testScanner with the appropriate file pointer	
-	testScanner(fp);
+	node *root = parser(fp);
+	printTree(root,0);
+	fclose(fp);
 	return 0;
 }
 
